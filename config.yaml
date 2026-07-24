@@ -1,0 +1,106 @@
+# ==========================================================
+# Market Briefing System - Configuration
+# All values here are free-tier safe. No paid keys required.
+# ==========================================================
+
+timezone: "UTC"
+display_timezone: "Asia/Kolkata"
+
+instruments:
+  NQ:
+    label: "Nasdaq 100 E-mini Futures"
+    yf_ticker: "NQ=F"
+    fallback_ticker: "^NDX"
+  DXY:
+    label: "US Dollar Index"
+    yf_ticker: "DX-Y.NYB"
+    fallback_ticker: "DX=F"
+  GC:
+    label: "Gold Futures"
+    yf_ticker: "GC=F"
+    fallback_ticker: "XAUUSD=X"
+  TNX:
+    label: "US 10-Year Treasury Yield"
+    yf_ticker: "^TNX"
+    fallback_ticker: null
+
+macro_calendar:
+  source_url: "https://nfs.faireconomy.media/ff_calendar_thisweek.json"
+  high_impact_only_in_summary: true
+  lookahead_hours: 24
+  request_timeout_seconds: 10
+
+manual_overrides_path: "data/manual_overrides.json"
+
+level_watch_instruments:
+  NQ:
+    label: "Nasdaq 100 Futures"
+    yf_ticker: "NQ=F"
+    fallback_ticker: "^NDX"
+  DXY:
+    label: "US Dollar Index"
+    yf_ticker: "DX-Y.NYB"
+    fallback_ticker: "DX=F"
+  GOLD_FUT:
+    label: "Gold Futures"
+    yf_ticker: "GC=F"
+    fallback_ticker: "XAUUSD=X"
+  GOLD_SPOT:
+    label: "Gold Spot"
+    yf_ticker: "XAUUSD=X"
+    fallback_ticker: "GC=F"
+  SILVER_FUT:
+    label: "Silver Futures"
+    yf_ticker: "SI=F"
+    fallback_ticker: "XAGUSD=X"
+  SILVER_SPOT:
+    label: "Silver Spot"
+    yf_ticker: "XAGUSD=X"
+    fallback_ticker: "SI=F"
+  OIL_FUT:
+    label: "WTI Crude Oil Futures"
+    yf_ticker: "CL=F"
+    fallback_ticker: null
+  EURUSD:
+    label: "EUR/USD"
+    yf_ticker: "EURUSD=X"
+    fallback_ticker: null
+  GBPUSD:
+    label: "GBP/USD"
+    yf_ticker: "GBPUSD=X"
+    fallback_ticker: null
+  USDJPY:
+    label: "USD/JPY"
+    yf_ticker: "USDJPY=X"
+    fallback_ticker: null
+  BTC:
+    label: "Bitcoin"
+    yf_ticker: "BTC-USD"
+    fallback_ticker: null
+  US10Y_YIELD:
+    label: "US 10-Year Treasury Yield"
+    yf_ticker: "^TNX"
+    fallback_ticker: null
+  US10Y_NOTE_FUT:
+    label: "US 10-Year T-Note Futures"
+    yf_ticker: "ZN=F"
+    fallback_ticker: null
+
+sessions:
+  asia:
+    label: "Asia Pre-Session"
+    session_window_utc: "23:00-08:00"
+  ny:
+    label: "NY Pre-Session"
+    session_window_utc: "12:00-21:00"
+
+analysis:
+  intraday_interval: "15m"
+  intraday_lookback_days: 5
+  daily_lookback_days: 30
+  swing_lookback_bars: 40
+  fvg_lookback_bars: 30
+
+output:
+  reports_dir: "reports"
+  log_file: "logs/app.log"
