@@ -64,7 +64,12 @@ def _reset_state_if_new_day(state: dict) -> dict:
     return state
 
 
-def _compute_levels(daily_df) -> dict:
+def _compute_levels(daily_df: pd.DataFrame) -> dict:
+    """
+    Returns prior Day/Week/Month High/Low from a daily OHLC
+    DataFrame. Close levels are intentionally excluded - only
+    High/Low represent real liquidity/sweep levels.
+    """
     levels = {}
     if daily_df is None or daily_df.empty or len(daily_df) < 3:
         return levels
@@ -72,7 +77,6 @@ def _compute_levels(daily_df) -> dict:
     prior_day = daily_df.iloc[-2]
     levels["Prior Day High"] = float(prior_day["High"])
     levels["Prior Day Low"] = float(prior_day["Low"])
-    levels["Prior Day Close"] = float(prior_day["Close"])
 
     weekly = daily_df.resample("W-FRI").agg(
         {"Open": "first", "High": "max", "Low": "min", "Close": "last"}
@@ -81,7 +85,6 @@ def _compute_levels(daily_df) -> dict:
         prior_week = weekly.iloc[-2]
         levels["Prior Week High"] = float(prior_week["High"])
         levels["Prior Week Low"] = float(prior_week["Low"])
-        levels["Prior Week Close"] = float(prior_week["Close"])
 
     monthly = daily_df.resample("ME").agg(
         {"Open": "first", "High": "max", "Low": "min", "Close": "last"}
@@ -90,7 +93,6 @@ def _compute_levels(daily_df) -> dict:
         prior_month = monthly.iloc[-2]
         levels["Prior Month High"] = float(prior_month["High"])
         levels["Prior Month Low"] = float(prior_month["Low"])
-        levels["Prior Month Close"] = float(prior_month["Close"])
 
     return levels
 
