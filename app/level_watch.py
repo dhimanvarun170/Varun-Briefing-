@@ -35,8 +35,9 @@ TOUCH_TOLERANCE = {
     "GBPUSD": 0.0008,
     "USDJPY": 0.0008,
     "BTC": 0.0008,
-    "US10Y_YIELD": 0.0008,
+  "US10Y_YIELD": 0.0008,
     "US10Y_NOTE_FUT": 0.0008,
+    "US2Y_YIELD": 0.0008,
 }
 
 
