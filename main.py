@@ -59,7 +59,7 @@ def cmd_check_levels(cfg: dict):
         try:
             resp = requests.post(
                 f"https://api.telegram.org/bot{bot_token}/sendMessage",
-                data={"chat_id": chat_id, "text": msg},
+                data={"chat_id": chat_id, "text": msg, "parse_mode": "HTML"},
                 timeout=10,
             )
             if not resp.ok:
