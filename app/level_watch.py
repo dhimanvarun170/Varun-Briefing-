@@ -254,38 +254,43 @@ def rank_top_setups(watchlist: list, top_n: int = 2) -> list:
     return scored[:top_n]
 
 
+_LEVEL_ABBREV = {
+    "Prior Day High": "PDH", "Prior Day Low": "PDL",
+    "Prior Week High": "PWH", "Prior Week Low": "PWL",
+    "Prior Month High": "PMH", "Prior Month Low": "PML",
+}
+
+
 def format_proximity_summary(watchlist: list) -> str:
-    """
-    Ranks every instrument by how close spot is to its nearest D/W/M
-    level (touched or not), so you can see at a glance what's coming
-    up across the whole watchlist - not just what already triggered.
-    """
     rows = []
     for inst in watchlist:
         if not inst.get("ok") or not inst.get("levels"):
             continue
         closest = min(inst["levels"], key=lambda l: abs(l["distance"]))
         rows.append({
-            "label": inst["label"],
+            "key": inst["key"],
             "bias": inst["bias"],
             "spot": inst["spot"],
-            "level_name": closest["name"],
-            "level_value": closest["value"],
+            "level_name": _LEVEL_ABBREV.get(closest["name"], closest["name"][:4]),
             "distance": closest["distance"],
             "swept": closest["swept_today"],
         })
     rows.sort(key=lambda r: abs(r["distance"]))
 
-    lines = ["Nearest D/W/M levels (closest first):"]
+    header = f"{'Instr':<15}{'Spot':>10} {'Lvl':<4} {'Dist':>9} {'Swp':<4}{'Bias'}"
+    lines = ["<pre>", header, "-" * len(header)]
     for r in rows:
-        sign = "+" if r["distance"] >= 0 else ""
-        tag = "SWEPT" if r["swept"] else "not swept"
+        swept = "Y" if r["swept"] else "N"
+        bias_short = {"bullish": "BULL", "bearish": "BEAR", "neutral": "NEUT"}.get(r["bias"], "?")
         lines.append(
-            f"{r['label']}: {r['spot']:,.2f} -> {r['level_name']} "
-            f"{r['level_value']:,.2f} ({sign}{r['distance']:.2f} away, {tag}) "
-            f"[{r['bias'].upper()}]"
+            f"{r['key']:<15}{r['spot']:>10,.2f} {r['level_name']:<4} "
+            f"{r['distance']:>+9.2f} {swept:<4}{bias_short}"
         )
+    lines.append("</pre>")
     return "\n".join(lines)
+
+
+def format_alert_message(events: list) -> str:
     lines = ["Level Alert"]
     for e in events:
         lines.append(
