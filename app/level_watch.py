@@ -26,7 +26,18 @@ STATE_PATH = "data/level_alert_state.json"
 TOUCH_TOLERANCE = {
     "NQ": 0.0008,
     "DXY": 0.0008,
-    "GC": 0.0008,
+    "GOLD_FUT": 0.0008,
+    "GOLD_SPOT": 0.0008,
+    "SILVER_FUT": 0.0008,
+    "SILVER_SPOT": 0.0008,
+    "OIL_FUT": 0.0008,
+    "EURUSD": 0.0008,
+    "GBPUSD": 0.0008,
+    "USDJPY": 0.0008,
+    "BTC": 0.0008,
+  "US10Y_YIELD": 0.0008,
+    "US10Y_NOTE_FUT": 0.0008,
+    "US2Y_YIELD": 0.0008,
 }
 
 
@@ -241,7 +252,38 @@ def rank_top_setups(watchlist: list, top_n: int = 2) -> list:
     return scored[:top_n]
 
 
-def format_alert_message(events: list) -> str:
+def format_proximity_summary(watchlist: list) -> str:
+    """
+    Ranks every instrument by how close spot is to its nearest D/W/M
+    level (touched or not), so you can see at a glance what's coming
+    up across the whole watchlist - not just what already triggered.
+    """
+    rows = []
+    for inst in watchlist:
+        if not inst.get("ok") or not inst.get("levels"):
+            continue
+        closest = min(inst["levels"], key=lambda l: abs(l["distance"]))
+        rows.append({
+            "label": inst["label"],
+            "bias": inst["bias"],
+            "spot": inst["spot"],
+            "level_name": closest["name"],
+            "level_value": closest["value"],
+            "distance": closest["distance"],
+            "swept": closest["swept_today"],
+        })
+    rows.sort(key=lambda r: abs(r["distance"]))
+
+    lines = ["Nearest D/W/M levels (closest first):"]
+    for r in rows:
+        sign = "+" if r["distance"] >= 0 else ""
+        tag = "SWEPT" if r["swept"] else "not swept"
+        lines.append(
+            f"{r['label']}: {r['spot']:,.2f} -> {r['level_name']} "
+            f"{r['level_value']:,.2f} ({sign}{r['distance']:.2f} away, {tag}) "
+            f"[{r['bias'].upper()}]"
+        )
+    return "\n".join(lines)
     lines = ["Level Alert"]
     for e in events:
         lines.append(
