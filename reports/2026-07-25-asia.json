@@ -3,8 +3,8 @@
     "session": "asia",
     "session_label": "Asia Pre-Session",
     "session_window_utc": "23:00-08:00",
-    "generated_at_utc": "2026-07-25T02:49:53.476296+00:00",
-    "generated_at_display_tz": "2026-07-25T08:19:53.476296+05:30",
+    "generated_at_utc": "2026-07-25T13:54:30.899652+00:00",
+    "generated_at_display_tz": "2026-07-25T19:24:30.899652+05:30",
     "display_timezone": "Asia/Kolkata"
   },
   "macro": {
@@ -18,11 +18,11 @@
     "NQ": {
       "ok": true,
       "ticker_used": "NQ=F",
-      "last_price": 28306.5,
+      "last_price": 28282.25,
       "prior_day_high": 29282.5,
       "prior_day_low": 28432.5,
       "prior_day_close": 28620.75,
-      "pct_change_vs_prior_close": -1.0979796126935877,
+      "pct_change_vs_prior_close": -1.182708349711311,
       "htf_trend_ema8_vs_ema21": "down",
       "swing_high_liquidity_pool": 28700.0,
       "swing_low_liquidity_pool": 28212.5,
@@ -69,11 +69,11 @@
     "GC": {
       "ok": true,
       "ticker_used": "GC=F",
-      "last_price": 4055.699951171875,
+      "last_price": 4070.800048828125,
       "prior_day_high": 4130.89990234375,
       "prior_day_low": 4046.60009765625,
       "prior_day_close": 4046.60009765625,
-      "pct_change_vs_prior_close": 0.22487652093162216,
+      "pct_change_vs_prior_close": 0.5980316954445627,
       "htf_trend_ema8_vs_ema21": "down",
       "swing_high_liquidity_pool": 4085.199951171875,
       "swing_low_liquidity_pool": 4046.89990234375,
@@ -113,61 +113,61 @@
       "label": "Nasdaq 100 Futures",
       "ok": true,
       "ticker_used": "NQ=F",
-      "spot": 28306.5,
+      "spot": 28282.25,
       "bias": "bearish",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 29282.5,
-          "distance": -976.0,
+          "distance": -1000.25,
           "swept_today": false
         },
         {
           "name": "Prior Day Low",
           "value": 28432.5,
-          "distance": -126.0,
+          "distance": -150.25,
           "swept_today": true
         },
         {
           "name": "Prior Day Close",
           "value": 28620.75,
-          "distance": -314.25,
+          "distance": -338.5,
           "swept_today": true
         },
         {
           "name": "Prior Week High",
           "value": 30062.5,
-          "distance": -1756.0,
+          "distance": -1780.25,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 28408.25,
-          "distance": -101.75,
+          "distance": -126.0,
           "swept_today": true
         },
         {
           "name": "Prior Week Close",
           "value": 28773.25,
-          "distance": -466.75,
+          "distance": -491.0,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 30968.0,
-          "distance": -2661.5,
+          "distance": -2685.75,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 28227.75,
-          "distance": 78.75,
+          "distance": 54.5,
           "swept_today": true
         },
         {
           "name": "Prior Month Close",
           "value": 30523.5,
-          "distance": -2217.0,
+          "distance": -2241.25,
           "swept_today": false
         }
       ],
@@ -243,325 +243,325 @@
       "label": "Gold Futures",
       "ok": true,
       "ticker_used": "GC=F",
-      "spot": 4055.699951171875,
+      "spot": 4070.800048828125,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 4130.89990234375,
-          "distance": -75.199951171875,
+          "distance": -60.099853515625,
           "swept_today": false
         },
         {
           "name": "Prior Day Low",
           "value": 4046.60009765625,
-          "distance": 9.099853515625,
-          "swept_today": true
+          "distance": 24.199951171875,
+          "swept_today": false
         },
         {
           "name": "Prior Day Close",
           "value": 4046.60009765625,
-          "distance": 9.099853515625,
-          "swept_today": true
+          "distance": 24.199951171875,
+          "swept_today": false
         },
         {
           "name": "Prior Week High",
           "value": 4091.199951171875,
-          "distance": -35.5,
+          "distance": -20.39990234375,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 3964.199951171875,
-          "distance": 91.5,
+          "distance": 106.60009765625,
           "swept_today": false
         },
         {
           "name": "Prior Week Close",
           "value": 4012.699951171875,
-          "distance": 43.0,
+          "distance": 58.10009765625,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 4541.39990234375,
-          "distance": -485.699951171875,
+          "distance": -470.599853515625,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 3962.5,
-          "distance": 93.199951171875,
+          "distance": 108.300048828125,
           "swept_today": false
         },
         {
           "name": "Prior Month Close",
           "value": 4022.89990234375,
-          "distance": 32.800048828125,
+          "distance": 47.900146484375,
           "swept_today": false
         }
       ],
-      "headline": "IIFL Finance Ltd (BOM:532636) Q1 2027 Earnings Call Highlights: Strong Profitability Amidst ..."
+      "headline": "UFC star Sean Strickland's brutally blunt money advice hits 5.2M views \u2014 and it's just 2 simple steps"
     },
     {
       "key": "GOLD_SPOT",
       "label": "Gold Spot",
       "ok": true,
       "ticker_used": "GC=F",
-      "spot": 4055.699951171875,
+      "spot": 4070.800048828125,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 4130.89990234375,
-          "distance": -75.199951171875,
+          "distance": -60.099853515625,
           "swept_today": false
         },
         {
           "name": "Prior Day Low",
           "value": 4046.60009765625,
-          "distance": 9.099853515625,
-          "swept_today": true
+          "distance": 24.199951171875,
+          "swept_today": false
         },
         {
           "name": "Prior Day Close",
           "value": 4046.60009765625,
-          "distance": 9.099853515625,
-          "swept_today": true
+          "distance": 24.199951171875,
+          "swept_today": false
         },
         {
           "name": "Prior Week High",
           "value": 4091.199951171875,
-          "distance": -35.5,
+          "distance": -20.39990234375,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 3964.199951171875,
-          "distance": 91.5,
+          "distance": 106.60009765625,
           "swept_today": false
         },
         {
           "name": "Prior Week Close",
           "value": 4012.699951171875,
-          "distance": 43.0,
+          "distance": 58.10009765625,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 4541.39990234375,
-          "distance": -485.699951171875,
+          "distance": -470.599853515625,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 3962.5,
-          "distance": 93.199951171875,
+          "distance": 108.300048828125,
           "swept_today": false
         },
         {
           "name": "Prior Month Close",
           "value": 4022.89990234375,
-          "distance": 32.800048828125,
+          "distance": 47.900146484375,
           "swept_today": false
         }
       ],
-      "headline": "IIFL Finance Ltd (BOM:532636) Q1 2027 Earnings Call Highlights: Strong Profitability Amidst ..."
+      "headline": "UFC star Sean Strickland's brutally blunt money advice hits 5.2M views \u2014 and it's just 2 simple steps"
     },
     {
       "key": "SILVER_FUT",
       "label": "Silver Futures",
       "ok": true,
       "ticker_used": "SI=F",
-      "spot": 58.4900016784668,
+      "spot": 58.90599822998047,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 58.65999984741211,
-          "distance": -0.1699981689453125,
-          "swept_today": true
+          "distance": 0.24599838256835938,
+          "swept_today": false
         },
         {
           "name": "Prior Day Low",
           "value": 57.79800033569336,
-          "distance": 0.6920013427734375,
-          "swept_today": true
+          "distance": 1.1079978942871094,
+          "swept_today": false
         },
         {
           "name": "Prior Day Close",
           "value": 57.79800033569336,
-          "distance": 0.6920013427734375,
-          "swept_today": true
+          "distance": 1.1079978942871094,
+          "swept_today": false
         },
         {
           "name": "Prior Week High",
           "value": 59.60499954223633,
-          "distance": -1.1149978637695312,
+          "distance": -0.6990013122558594,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 55.01499938964844,
-          "distance": 3.4750022888183594,
+          "distance": 3.8909988403320312,
           "swept_today": false
         },
         {
           "name": "Prior Week Close",
           "value": 56.03799819946289,
-          "distance": 2.4520034790039062,
+          "distance": 2.868000030517578,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 76.0250015258789,
-          "distance": -17.53499984741211,
+          "distance": -17.119003295898438,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 57.03499984741211,
-          "distance": 1.4550018310546875,
+          "distance": 1.8709983825683594,
           "swept_today": false
         },
         {
           "name": "Prior Month Close",
           "value": 59.47700119018555,
-          "distance": -0.98699951171875,
+          "distance": -0.5710029602050781,
           "swept_today": false
         }
       ],
-      "headline": "Hindustan Zinc Ltd (BOM:500188) Q1 2027 Earnings Call Highlights: Record Profits and Strategic ..."
+      "headline": "Vizsla Silver (TSX:VZLA) Reported Wider Annual Losses, Is The Stock Fully Priced?"
     },
     {
       "key": "SILVER_SPOT",
       "label": "Silver Spot",
       "ok": true,
       "ticker_used": "SI=F",
-      "spot": 58.4900016784668,
+      "spot": 58.90599822998047,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 58.65999984741211,
-          "distance": -0.1699981689453125,
-          "swept_today": true
+          "distance": 0.24599838256835938,
+          "swept_today": false
         },
         {
           "name": "Prior Day Low",
           "value": 57.79800033569336,
-          "distance": 0.6920013427734375,
-          "swept_today": true
+          "distance": 1.1079978942871094,
+          "swept_today": false
         },
         {
           "name": "Prior Day Close",
           "value": 57.79800033569336,
-          "distance": 0.6920013427734375,
-          "swept_today": true
+          "distance": 1.1079978942871094,
+          "swept_today": false
         },
         {
           "name": "Prior Week High",
           "value": 59.60499954223633,
-          "distance": -1.1149978637695312,
+          "distance": -0.6990013122558594,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 55.01499938964844,
-          "distance": 3.4750022888183594,
+          "distance": 3.8909988403320312,
           "swept_today": false
         },
         {
           "name": "Prior Week Close",
           "value": 56.03799819946289,
-          "distance": 2.4520034790039062,
+          "distance": 2.868000030517578,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 76.0250015258789,
-          "distance": -17.53499984741211,
+          "distance": -17.119003295898438,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 57.03499984741211,
-          "distance": 1.4550018310546875,
+          "distance": 1.8709983825683594,
           "swept_today": false
         },
         {
           "name": "Prior Month Close",
           "value": 59.47700119018555,
-          "distance": -0.98699951171875,
+          "distance": -0.5710029602050781,
           "swept_today": false
         }
       ],
-      "headline": "Hindustan Zinc Ltd (BOM:500188) Q1 2027 Earnings Call Highlights: Record Profits and Strategic ..."
+      "headline": "Vizsla Silver (TSX:VZLA) Reported Wider Annual Losses, Is The Stock Fully Priced?"
     },
     {
       "key": "OIL_FUT",
       "label": "WTI Crude Oil Futures",
       "ok": true,
       "ticker_used": "CL=F",
-      "spot": 90.47000122070312,
+      "spot": 89.30999755859375,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 93.5,
-          "distance": -3.029998779296875,
+          "distance": -4.19000244140625,
           "swept_today": false
         },
         {
           "name": "Prior Day Low",
           "value": 87.31999969482422,
-          "distance": 3.1500015258789062,
+          "distance": 1.9899978637695312,
           "swept_today": false
         },
         {
           "name": "Prior Day Close",
           "value": 92.19000244140625,
-          "distance": -1.720001220703125,
+          "distance": -2.8800048828125,
           "swept_today": true
         },
         {
           "name": "Prior Week High",
           "value": 82.76000213623047,
-          "distance": 7.709999084472656,
+          "distance": 6.549995422363281,
           "swept_today": true
         },
         {
           "name": "Prior Week Low",
           "value": 72.61000061035156,
-          "distance": 17.860000610351562,
+          "distance": 16.699996948242188,
           "swept_today": false
         },
         {
           "name": "Prior Week Close",
           "value": 82.48999786376953,
-          "distance": 7.980003356933594,
+          "distance": 6.819999694824219,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 97.0,
-          "distance": -6.529998779296875,
+          "distance": -7.69000244140625,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 68.55999755859375,
-          "distance": 21.910003662109375,
+          "distance": 20.75,
           "swept_today": false
         },
         {
           "name": "Prior Month Close",
           "value": 69.5,
-          "distance": 20.970001220703125,
+          "distance": 19.80999755859375,
           "swept_today": false
         }
       ],
-      "headline": "Goldman Sachs doubles down on oil price forecast for 2026"
+      "headline": "Dow Jones Futures: Market Triggers Sell Signal; Apple Earnings, Iran News, Fed Meeting In Focus"
     },
     {
       "key": "EURUSD",
@@ -763,65 +763,65 @@
       "label": "Bitcoin",
       "ok": true,
       "ticker_used": "BTC-USD",
-      "spot": 63972.3515625,
-      "bias": "neutral",
+      "spot": 64120.0,
+      "bias": "bullish",
       "levels": [
         {
           "name": "Prior Day High",
-          "value": 66282.3828125,
-          "distance": -2310.03125,
+          "value": 65760.484375,
+          "distance": -1640.484375,
           "swept_today": false
         },
         {
           "name": "Prior Day Low",
-          "value": 64610.609375,
-          "distance": -638.2578125,
-          "swept_today": true
+          "value": 63686.03515625,
+          "distance": 433.96484375,
+          "swept_today": false
         },
         {
           "name": "Prior Day Close",
-          "value": 65044.8125,
-          "distance": -1072.4609375,
-          "swept_today": false
+          "value": 64098.49609375,
+          "distance": 21.50390625,
+          "swept_today": true
         },
         {
           "name": "Prior Week High",
           "value": 66910.0625,
-          "distance": -2937.7109375,
+          "distance": -2790.0625,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
-          "value": 63720.390625,
-          "distance": 251.9609375,
+          "value": 63686.03515625,
+          "distance": 433.96484375,
           "swept_today": false
         },
         {
           "name": "Prior Week Close",
-          "value": 65044.8125,
-          "distance": -1072.4609375,
-          "swept_today": false
+          "value": 64098.49609375,
+          "distance": 21.50390625,
+          "swept_today": true
         },
         {
           "name": "Prior Month High",
           "value": 73969.5703125,
-          "distance": -9997.21875,
+          "distance": -9849.5703125,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 58075.921875,
-          "distance": 5896.4296875,
+          "distance": 6044.078125,
           "swept_today": false
         },
         {
           "name": "Prior Month Close",
           "value": 58558.859375,
-          "distance": 5413.4921875,
+          "distance": 5561.140625,
           "swept_today": false
         }
       ],
-      "headline": "Can Europe avoid a recession?"
+      "headline": "Bitcoin price falls below $64,000 as stablecoin inflows weaken"
     },
     {
       "key": "US10Y_YIELD",
