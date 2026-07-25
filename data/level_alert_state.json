@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-24",
+  "date": "2026-07-25",
   "triggered": {
     "NQ": [],
     "DXY": [
@@ -17,9 +17,7 @@
     ],
     "GBPUSD": [],
     "USDJPY": [],
-    "BTC": [
-      "Prior Week Close"
-    ],
+    "BTC": [],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": []
   }
