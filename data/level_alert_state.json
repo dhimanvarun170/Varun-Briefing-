@@ -17,7 +17,10 @@
     ],
     "GBPUSD": [],
     "USDJPY": [],
-    "BTC": [],
+    "BTC": [
+      "Prior Day Close",
+      "Prior Week Close"
+    ],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": []
   }
