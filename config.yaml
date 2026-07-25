@@ -85,6 +85,10 @@ level_watch_instruments:
     label: "US 10-Year T-Note Futures"
     yf_ticker: "ZN=F"
     fallback_ticker: null
+  US2Y_YIELD:
+    label: "US 2-Year Treasury Yield"
+    yf_ticker: "^UST2Y"
+    fallback_ticker: "ZT=F"
 
 sessions:
   asia:
