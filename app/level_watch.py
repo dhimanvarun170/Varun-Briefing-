@@ -298,3 +298,4 @@ def format_alert_message(events: list) -> str:
             f"({e['level_value']:,.2f}) - spot {e['spot']:,.2f}"
         )
     return "\n".join(lines)
+    _LEVEL_ABBREV = {
