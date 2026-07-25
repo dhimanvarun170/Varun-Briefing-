@@ -45,7 +45,6 @@ jobs:
           git config user.name "market-briefing-bot"
           git config user.email "actions@users.noreply.github.com"
           git add reports/
-          git diff --quiet && git diff --staged --quiet || git commit -m "Auto: NY pre-session report $(date -u +%Y-%m-%d)"
-          git pull --rebase --autostash origin main
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto: Asia pre-session report $(date -u +%Y-%m-%d)"
+          git pull --no-rebase -X ours --no-edit origin main
           git push
- 
