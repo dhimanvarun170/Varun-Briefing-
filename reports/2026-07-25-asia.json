@@ -3,8 +3,8 @@
     "session": "asia",
     "session_label": "Asia Pre-Session",
     "session_window_utc": "23:00-08:00",
-    "generated_at_utc": "2026-07-25T02:29:37.186300+00:00",
-    "generated_at_display_tz": "2026-07-25T07:59:37.186300+05:30",
+    "generated_at_utc": "2026-07-25T02:49:53.476296+00:00",
+    "generated_at_display_tz": "2026-07-25T08:19:53.476296+05:30",
     "display_timezone": "Asia/Kolkata"
   },
   "macro": {
@@ -763,61 +763,61 @@
       "label": "Bitcoin",
       "ok": true,
       "ticker_used": "BTC-USD",
-      "spot": 63997.23046875,
+      "spot": 63972.3515625,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 66282.3828125,
-          "distance": -2285.15234375,
+          "distance": -2310.03125,
           "swept_today": false
         },
         {
           "name": "Prior Day Low",
           "value": 64610.609375,
-          "distance": -613.37890625,
+          "distance": -638.2578125,
           "swept_today": true
         },
         {
           "name": "Prior Day Close",
           "value": 65044.8125,
-          "distance": -1047.58203125,
+          "distance": -1072.4609375,
           "swept_today": false
         },
         {
           "name": "Prior Week High",
           "value": 66910.0625,
-          "distance": -2912.83203125,
+          "distance": -2937.7109375,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 63720.390625,
-          "distance": 276.83984375,
+          "distance": 251.9609375,
           "swept_today": false
         },
         {
           "name": "Prior Week Close",
           "value": 65044.8125,
-          "distance": -1047.58203125,
+          "distance": -1072.4609375,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 73969.5703125,
-          "distance": -9972.33984375,
+          "distance": -9997.21875,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 58075.921875,
-          "distance": 5921.30859375,
+          "distance": 5896.4296875,
           "swept_today": false
         },
         {
           "name": "Prior Month Close",
           "value": 58558.859375,
-          "distance": 5438.37109375,
+          "distance": 5413.4921875,
           "swept_today": false
         }
       ],
