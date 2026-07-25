@@ -26,7 +26,18 @@ STATE_PATH = "data/level_alert_state.json"
 TOUCH_TOLERANCE = {
     "NQ": 0.0008,
     "DXY": 0.0008,
-    "GC": 0.0008,
+    "GOLD_FUT": 0.0008,
+    "GOLD_SPOT": 0.0008,
+    "SILVER_FUT": 0.0008,
+    "SILVER_SPOT": 0.0008,
+    "OIL_FUT": 0.0008,
+    "EURUSD": 0.0008,
+    "GBPUSD": 0.0008,
+    "USDJPY": 0.0008,
+    "BTC": 0.0008,
+  "US10Y_YIELD": 0.0008,
+    "US10Y_NOTE_FUT": 0.0008,
+    "US2Y_YIELD": 0.0008,
 }
 
 
@@ -53,7 +64,12 @@ def _reset_state_if_new_day(state: dict) -> dict:
     return state
 
 
-def _compute_levels(daily_df) -> dict:
+def _compute_levels(daily_df: pd.DataFrame) -> dict:
+    """
+    Returns prior Day/Week/Month High/Low from a daily OHLC
+    DataFrame. Close levels are intentionally excluded - only
+    High/Low represent real liquidity/sweep levels.
+    """
     levels = {}
     if daily_df is None or daily_df.empty or len(daily_df) < 3:
         return levels
@@ -61,7 +77,6 @@ def _compute_levels(daily_df) -> dict:
     prior_day = daily_df.iloc[-2]
     levels["Prior Day High"] = float(prior_day["High"])
     levels["Prior Day Low"] = float(prior_day["Low"])
-    levels["Prior Day Close"] = float(prior_day["Close"])
 
     weekly = daily_df.resample("W-FRI").agg(
         {"Open": "first", "High": "max", "Low": "min", "Close": "last"}
@@ -70,7 +85,6 @@ def _compute_levels(daily_df) -> dict:
         prior_week = weekly.iloc[-2]
         levels["Prior Week High"] = float(prior_week["High"])
         levels["Prior Week Low"] = float(prior_week["Low"])
-        levels["Prior Week Close"] = float(prior_week["Close"])
 
     monthly = daily_df.resample("ME").agg(
         {"Open": "first", "High": "max", "Low": "min", "Close": "last"}
@@ -79,7 +93,6 @@ def _compute_levels(daily_df) -> dict:
         prior_month = monthly.iloc[-2]
         levels["Prior Month High"] = float(prior_month["High"])
         levels["Prior Month Low"] = float(prior_month["Low"])
-        levels["Prior Month Close"] = float(prior_month["Close"])
 
     return levels
 
@@ -241,6 +254,42 @@ def rank_top_setups(watchlist: list, top_n: int = 2) -> list:
     return scored[:top_n]
 
 
+_LEVEL_ABBREV = {
+    "Prior Day High": "PDH", "Prior Day Low": "PDL",
+    "Prior Week High": "PWH", "Prior Week Low": "PWL",
+    "Prior Month High": "PMH", "Prior Month Low": "PML",
+}
+
+
+def format_proximity_summary(watchlist: list) -> str:
+    rows = []
+    for inst in watchlist:
+        if not inst.get("ok") or not inst.get("levels"):
+            continue
+        closest = min(inst["levels"], key=lambda l: abs(l["distance"]))
+        rows.append({
+            "key": inst["key"],
+            "bias": inst["bias"],
+            "spot": inst["spot"],
+            "level_name": _LEVEL_ABBREV.get(closest["name"], closest["name"][:4]),
+            "distance": closest["distance"],
+            "swept": closest["swept_today"],
+        })
+    rows.sort(key=lambda r: abs(r["distance"]))
+
+    header = f"{'Instr':<15}{'Spot':>10} {'Lvl':<4} {'Dist':>9} {'Swp':<4}{'Bias'}"
+    lines = ["<pre>", header, "-" * len(header)]
+    for r in rows:
+        swept = "Y" if r["swept"] else "N"
+        bias_short = {"bullish": "BULL", "bearish": "BEAR", "neutral": "NEUT"}.get(r["bias"], "?")
+        lines.append(
+            f"{r['key']:<15}{r['spot']:>10,.2f} {r['level_name']:<4} "
+            f"{r['distance']:>+9.2f} {swept:<4}{bias_short}"
+        )
+    lines.append("</pre>")
+    return "\n".join(lines)
+
+
 def format_alert_message(events: list) -> str:
     lines = ["Level Alert"]
     for e in events:
@@ -249,3 +298,4 @@ def format_alert_message(events: list) -> str:
             f"({e['level_value']:,.2f}) - spot {e['spot']:,.2f}"
         )
     return "\n".join(lines)
+    _LEVEL_ABBREV = {
