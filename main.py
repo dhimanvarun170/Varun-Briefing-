@@ -25,14 +25,22 @@ log = get_logger("main")
 def cmd_check_levels(cfg: dict):
     log.info("Checking D/W/M levels across the full watchlist ...")
     events = level_watch.check_all_levels(cfg)
-    watchlist = level_watch.analyze_full_watchlist(cfg)
-    proximity = level_watch.format_proximity_summary(watchlist)
 
-    msg = proximity
+    now_minute = dt.datetime.now(dt.timezone.utc).minute
+    send_table = now_minute % 30 < 5
+
+    parts = []
     if events:
-        alert_msg = level_watch.format_alert_message(events)
-        msg = alert_msg + "\n\n" + proximity
+        parts.append(level_watch.format_alert_message(events))
+    if send_table:
+        watchlist = level_watch.analyze_full_watchlist(cfg)
+        parts.append(level_watch.format_proximity_summary(watchlist))
 
+    if not parts:
+        print("No new touches this check, not a 30-min table slot - nothing to send.")
+        return
+
+    msg = "\n\n".join(parts)
     print(msg)
 
     bot_token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
@@ -51,23 +59,6 @@ def cmd_check_levels(cfg: dict):
             log.error(f"Telegram send error: {e}")
     else:
         log.info("TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID not set - printed summary only, no Telegram send.")
-
-    bot_token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
-    chat_id = os.environ.get("TELEGRAM_CHAT_ID", "")
-    if bot_token and chat_id:
-        import requests
-        try:
-            resp = requests.post(
-                f"https://api.telegram.org/bot{bot_token}/sendMessage",
-                data={"chat_id": chat_id, "text": msg, "parse_mode": "HTML"},
-                timeout=10,
-            )
-            if not resp.ok:
-                log.error(f"Telegram send failed: {resp.status_code} {resp.text}")
-        except Exception as e:
-            log.error(f"Telegram send error: {e}")
-    else:
-        log.info("TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID not set - printed alert only, no Telegram send.")
 
 
 def cmd_generate(session: str, cfg: dict):
