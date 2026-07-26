@@ -2,7 +2,7 @@
 Level-watch: continuously checks the full watchlist against
 Daily / Weekly / Monthly High/Low levels and fires a Telegram
 alert the first time price touches/crosses one, plus sends a
-ranked proximity table every check.
+full ranked table every check showing every level per instrument.
 
 State is tracked in data/level_alert_state.json so the same level
 doesn't spam you every check once touched - each level fires
@@ -261,32 +261,43 @@ _LEVEL_ABBREV = {
     "Prior Month High": "PMH", "Prior Month Low": "PML",
 }
 
+_LEVEL_ORDER = ["Prior Day High", "Prior Day Low", "Prior Week High",
+                "Prior Week Low", "Prior Month High", "Prior Month Low"]
+
 
 def format_proximity_summary(watchlist: list) -> str:
-    rows = []
+    blocks = []
     for inst in watchlist:
         if not inst.get("ok") or not inst.get("levels"):
             continue
-        closest = min(inst["levels"], key=lambda l: abs(l["distance"]))
-        rows.append({
-            "key": inst["key"],
-            "bias": inst["bias"],
-            "spot": inst["spot"],
-            "level_name": _LEVEL_ABBREV.get(closest["name"], closest["name"][:4]),
-            "distance": closest["distance"],
-            "swept": closest["swept_today"],
+        by_name = {l["name"]: l for l in inst["levels"]}
+        nearest_abs = min(abs(l["distance"]) for l in inst["levels"])
+        bias_short = {"bullish": "BULL", "bearish": "BEAR", "neutral": "NEUT"}.get(inst["bias"], "?")
+        rows = []
+        for name in _LEVEL_ORDER:
+            l = by_name.get(name)
+            if not l:
+                continue
+            rows.append({
+                "level_name": _LEVEL_ABBREV[name],
+                "distance": l["distance"],
+                "swept": l["swept_today"],
+            })
+        blocks.append({
+            "key": inst["key"], "spot": inst["spot"], "bias": bias_short,
+            "nearest_abs": nearest_abs, "rows": rows,
         })
-    rows.sort(key=lambda r: abs(r["distance"]))
+    blocks.sort(key=lambda b: b["nearest_abs"])
 
-    header = f"{'Instr':<15}{'Spot':>10} {'Lvl':<4} {'Dist':>9} {'Swp':<4}{'Bias'}"
-    lines = ["<pre>", header, "-" * len(header)]
-    for r in rows:
-        swept = "Y" if r["swept"] else "N"
-        bias_short = {"bullish": "BULL", "bearish": "BEAR", "neutral": "NEUT"}.get(r["bias"], "?")
-        lines.append(
-            f"{r['key']:<15}{r['spot']:>10,.2f} {r['level_name']:<4} "
-            f"{r['distance']:>+9.2f} {swept:<4}{bias_short}"
-        )
+    header = f"{'Lvl':<4} {'Dist':>9} {'Swp'}"
+    lines = ["<pre>"]
+    for b in blocks:
+        lines.append(f"{b['key']} | spot {b['spot']:,.2f} | {b['bias']}")
+        lines.append(header)
+        for r in b["rows"]:
+            swept = "Y" if r["swept"] else "N"
+            lines.append(f"{r['level_name']:<4} {r['distance']:>+9.2f} {swept}")
+        lines.append("-" * 24)
     lines.append("</pre>")
     return "\n".join(lines)
 
