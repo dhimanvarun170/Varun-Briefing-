@@ -1,4 +1,4 @@
-Report: Asia Pre-Session - 2026-07-25
+Report: Asia Pre-Session - 2026-07-26
 
 NQ: BEARISH (28,282.25)
 DXY: BULLISH (101.46)
@@ -7,8 +7,8 @@ Gold: NEUTRAL (4,070.80)
 
 FINAL STANCE: NEUTRAL / WAIT - mixed signals, let price confirm
 
-Full report: https://github.com/dhimanvarun170/Varun-Briefing-/blob/main/reports/2026-07-25-asia.md
+Full report: https://github.com/dhimanvarun170/Varun-Briefing-/blob/main/reports/2026-07-26-asia.md
 
 Top setups:
 - EUR/USD: BEARISH -> Prior Day Low (+0.00 away)
-- US Dollar Index: BULLISH -> Prior Day High (-0.08 away)
+- GBP/USD: BULLISH -> Prior Day Low (+0.00 away)
