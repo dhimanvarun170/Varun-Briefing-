@@ -1,10 +1,11 @@
-﻿"""
-Level-watch: continuously checks NQ / DXY / Gold spot price against
-Daily / Weekly / Monthly OHLC levels (prior period High, Low, Close)
-and fires a Telegram alert the first time price touches/crosses one.
+"""
+Level-watch: continuously checks the full watchlist against
+Daily / Weekly / Monthly High/Low levels and fires a Telegram
+alert the first time price touches/crosses one, plus sends a
+ranked proximity table every check.
 
 State is tracked in data/level_alert_state.json so the same level
-doesn't spam you every 15 minutes once touched - each level fires
+doesn't spam you every check once touched - each level fires
 once per UTC calendar day, then resets.
 """
 from __future__ import annotations
@@ -18,7 +19,7 @@ log = get_logger(__name__)
 
 try:
     import yfinance as yf
-except ImportError:
+except ImportError:  # pragma: no cover
     yf = None
 
 STATE_PATH = "data/level_alert_state.json"
@@ -35,7 +36,7 @@ TOUCH_TOLERANCE = {
     "GBPUSD": 0.0008,
     "USDJPY": 0.0008,
     "BTC": 0.0008,
-  "US10Y_YIELD": 0.0008,
+    "US10Y_YIELD": 0.0008,
     "US10Y_NOTE_FUT": 0.0008,
     "US2Y_YIELD": 0.0008,
 }
@@ -64,11 +65,11 @@ def _reset_state_if_new_day(state: dict) -> dict:
     return state
 
 
-def _compute_levels(daily_df: pd.DataFrame) -> dict:
+def _compute_levels(daily_df) -> dict:
     """
-    Returns prior Day/Week/Month High/Low from a daily OHLC
-    DataFrame. Close levels are intentionally excluded - only
-    High/Low represent real liquidity/sweep levels.
+    Returns prior Day/Week/Month High/Low. Close levels are
+    intentionally excluded - only High/Low represent real
+    liquidity/sweep levels.
     """
     levels = {}
     if daily_df is None or daily_df.empty or len(daily_df) < 3:
@@ -298,4 +299,3 @@ def format_alert_message(events: list) -> str:
             f"({e['level_value']:,.2f}) - spot {e['spot']:,.2f}"
         )
     return "\n".join(lines)
-    _LEVEL_ABBREV = {
