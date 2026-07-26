@@ -2,7 +2,7 @@
 Level-watch: continuously checks the full watchlist against
 Daily / Weekly / Monthly High/Low levels and fires a Telegram
 alert the first time price touches/crosses one, plus sends a
-ranked proximity table every check.
+full ranked table every check showing every level per instrument.
 
 State is tracked in data/level_alert_state.json so the same level
 doesn't spam you every check once touched - each level fires
