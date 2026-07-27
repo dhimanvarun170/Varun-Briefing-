@@ -3,8 +3,8 @@
     "session": "asia",
     "session_label": "Asia Pre-Session",
     "session_window_utc": "23:00-08:00",
-    "generated_at_utc": "2026-07-27T07:19:01.942912+00:00",
-    "generated_at_display_tz": "2026-07-27T12:49:01.942912+05:30",
+    "generated_at_utc": "2026-07-27T07:37:05.405823+00:00",
+    "generated_at_display_tz": "2026-07-27T13:07:05.405823+05:30",
     "display_timezone": "Asia/Kolkata"
   },
   "macro": {
@@ -116,11 +116,11 @@
     "NQ": {
       "ok": true,
       "ticker_used": "NQ=F",
-      "last_price": 28699.0,
+      "last_price": 28703.75,
       "prior_day_high": 28736.0,
       "prior_day_low": 28212.5,
       "prior_day_close": 28282.25,
-      "pct_change_vs_prior_close": 1.4735390571825084,
+      "pct_change_vs_prior_close": 1.4903340434371382,
       "htf_trend_ema8_vs_ema21": "down",
       "swing_high_liquidity_pool": 28733.75,
       "swing_low_liquidity_pool": 28282.25,
@@ -143,11 +143,11 @@
     "DXY": {
       "ok": true,
       "ticker_used": "DX-Y.NYB",
-      "last_price": 101.20099639892578,
-      "prior_day_high": 101.52999877929688,
-      "prior_day_low": 101.25,
-      "prior_day_close": 101.47000122070312,
-      "pct_change_vs_prior_close": -0.26510773483903155,
+      "last_price": 101.18099975585938,
+      "prior_day_high": 101.54000091552734,
+      "prior_day_low": 100.94000244140625,
+      "prior_day_close": 101.43000030517578,
+      "pct_change_vs_prior_close": -0.24549004098119892,
       "htf_trend_ema8_vs_ema21": "up",
       "swing_high_liquidity_pool": 101.49700164794922,
       "swing_low_liquidity_pool": 101.11599731445312,
@@ -170,18 +170,18 @@
     "GC": {
       "ok": true,
       "ticker_used": "GC=F",
-      "last_price": 4099.5,
+      "last_price": 4106.5,
       "prior_day_high": 4068.0,
       "prior_day_low": 4067.60009765625,
       "prior_day_close": 4067.60009765625,
-      "pct_change_vs_prior_close": 0.7842438189076335,
+      "pct_change_vs_prior_close": 0.9563354658724713,
       "htf_trend_ema8_vs_ema21": "up",
       "swing_high_liquidity_pool": 4119.2998046875,
       "swing_low_liquidity_pool": 4053.89990234375,
       "fair_value_gaps": {
         "bullish_fvg": {
-          "gap_low": 4092.300048828125,
-          "gap_high": 4093.60009765625
+          "gap_low": 4101.39990234375,
+          "gap_high": 4101.7001953125
         },
         "bearish_fvg": {
           "gap_low": 4095.39990234375,
@@ -198,13 +198,13 @@
   "yields": {
     "TNX": {
       "ok": true,
-      "last_yield": 4.678999900817871,
-      "prev_yield": 4.703000068664551,
-      "direction": "falling"
+      "last_yield": 4.703000068664551,
+      "prev_yield": 4.6570000648498535,
+      "direction": "rising"
     }
   },
   "confluence_notes": [
-    "10Y yield FALLING -> tailwind for Gold and NQ/growth, headwind for DXY.",
+    "10Y yield RISING -> headwind for Gold and NQ/growth, tailwind for DXY.",
     "DXY and Gold biases are inversely aligned (normal relationship) - supports higher-confidence conviction on both."
   ],
   "final_stance": "NEUTRAL / WAIT - mixed signals, let price confirm",
@@ -214,43 +214,43 @@
       "label": "Nasdaq 100 Futures",
       "ok": true,
       "ticker_used": "NQ=F",
-      "spot": 28699.0,
+      "spot": 28703.75,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 28736.0,
-          "distance": -37.0,
+          "distance": -32.25,
           "swept_today": false
         },
         {
           "name": "Prior Day Low",
           "value": 28212.5,
-          "distance": 486.5,
+          "distance": 491.25,
           "swept_today": false
         },
         {
           "name": "Prior Week High",
           "value": 29364.75,
-          "distance": -665.75,
+          "distance": -661.0,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 28212.5,
-          "distance": 486.5,
+          "distance": 491.25,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 30968.0,
-          "distance": -2269.0,
+          "distance": -2264.25,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 28227.75,
-          "distance": 471.25,
+          "distance": 476.0,
           "swept_today": false
         }
       ],
@@ -261,43 +261,43 @@
       "label": "US Dollar Index",
       "ok": true,
       "ticker_used": "DX-Y.NYB",
-      "spot": 101.20099639892578,
+      "spot": 101.18199920654297,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
-          "value": 101.52999877929688,
-          "distance": -0.32900238037109375,
+          "value": 101.54000091552734,
+          "distance": -0.358001708984375,
           "swept_today": false
         },
         {
           "name": "Prior Day Low",
-          "value": 101.25,
-          "distance": -0.04900360107421875,
-          "swept_today": true
+          "value": 100.94000244140625,
+          "distance": 0.24199676513671875,
+          "swept_today": false
         },
         {
           "name": "Prior Week High",
           "value": 101.54000091552734,
-          "distance": -0.3390045166015625,
+          "distance": -0.358001708984375,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 100.6500015258789,
-          "distance": 0.550994873046875,
+          "distance": 0.5319976806640625,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 101.80000305175781,
-          "distance": -0.5990066528320312,
+          "distance": -0.6180038452148438,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 98.91999816894531,
-          "distance": 2.2809982299804688,
+          "distance": 2.2620010375976562,
           "swept_today": false
         }
       ],
@@ -308,43 +308,43 @@
       "label": "Gold Futures",
       "ok": true,
       "ticker_used": "GC=F",
-      "spot": 4099.5,
+      "spot": 4106.5,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 4068.0,
-          "distance": 31.5,
+          "distance": 38.5,
           "swept_today": true
         },
         {
           "name": "Prior Day Low",
           "value": 4067.60009765625,
-          "distance": 31.89990234375,
+          "distance": 38.89990234375,
           "swept_today": false
         },
         {
           "name": "Prior Week High",
           "value": 4152.10009765625,
-          "distance": -52.60009765625,
+          "distance": -45.60009765625,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 3999.699951171875,
-          "distance": 99.800048828125,
+          "distance": 106.800048828125,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 4541.39990234375,
-          "distance": -441.89990234375,
+          "distance": -434.89990234375,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 3962.5,
-          "distance": 137.0,
+          "distance": 144.0,
           "swept_today": false
         }
       ],
@@ -355,43 +355,43 @@
       "label": "Gold Spot",
       "ok": true,
       "ticker_used": "GC=F",
-      "spot": 4099.5,
+      "spot": 4106.5,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 4068.0,
-          "distance": 31.5,
+          "distance": 38.5,
           "swept_today": true
         },
         {
           "name": "Prior Day Low",
           "value": 4067.60009765625,
-          "distance": 31.89990234375,
+          "distance": 38.89990234375,
           "swept_today": false
         },
         {
           "name": "Prior Week High",
           "value": 4152.10009765625,
-          "distance": -52.60009765625,
+          "distance": -45.60009765625,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 3999.699951171875,
-          "distance": 99.800048828125,
+          "distance": 106.800048828125,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 4541.39990234375,
-          "distance": -441.89990234375,
+          "distance": -434.89990234375,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 3962.5,
-          "distance": 137.0,
+          "distance": 144.0,
           "swept_today": false
         }
       ],
@@ -402,43 +402,43 @@
       "label": "Silver Futures",
       "ok": true,
       "ticker_used": "SI=F",
-      "spot": 59.810001373291016,
+      "spot": 60.04499816894531,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 58.65599822998047,
-          "distance": 1.1540031433105469,
+          "distance": 1.3889999389648438,
           "swept_today": true
         },
         {
           "name": "Prior Day Low",
           "value": 58.65599822998047,
-          "distance": 1.1540031433105469,
+          "distance": 1.3889999389648438,
           "swept_today": false
         },
         {
           "name": "Prior Week High",
           "value": 60.01900100708008,
-          "distance": -0.2089996337890625,
+          "distance": 0.025997161865234375,
           "swept_today": true
         },
         {
           "name": "Prior Week Low",
           "value": 55.654998779296875,
-          "distance": 4.155002593994141,
+          "distance": 4.3899993896484375,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 76.0250015258789,
-          "distance": -16.21500015258789,
+          "distance": -15.980003356933594,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 57.03499984741211,
-          "distance": 2.7750015258789062,
+          "distance": 3.009998321533203,
           "swept_today": false
         }
       ],
@@ -449,43 +449,43 @@
       "label": "Silver Spot",
       "ok": true,
       "ticker_used": "SI=F",
-      "spot": 59.810001373291016,
+      "spot": 60.04499816894531,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 58.65599822998047,
-          "distance": 1.1540031433105469,
+          "distance": 1.3889999389648438,
           "swept_today": true
         },
         {
           "name": "Prior Day Low",
           "value": 58.65599822998047,
-          "distance": 1.1540031433105469,
+          "distance": 1.3889999389648438,
           "swept_today": false
         },
         {
           "name": "Prior Week High",
           "value": 60.01900100708008,
-          "distance": -0.2089996337890625,
+          "distance": 0.025997161865234375,
           "swept_today": true
         },
         {
           "name": "Prior Week Low",
           "value": 55.654998779296875,
-          "distance": 4.155002593994141,
+          "distance": 4.3899993896484375,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 76.0250015258789,
-          "distance": -16.21500015258789,
+          "distance": -15.980003356933594,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 57.03499984741211,
-          "distance": 2.7750015258789062,
+          "distance": 3.009998321533203,
           "swept_today": false
         }
       ],
@@ -496,43 +496,43 @@
       "label": "WTI Crude Oil Futures",
       "ok": true,
       "ticker_used": "CL=F",
-      "spot": 83.8499984741211,
+      "spot": 83.98999786376953,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 92.83000183105469,
-          "distance": -8.980003356933594,
+          "distance": -8.840003967285156,
           "swept_today": false
         },
         {
           "name": "Prior Day Low",
           "value": 87.68000030517578,
-          "distance": -3.8300018310546875,
+          "distance": -3.69000244140625,
           "swept_today": true
         },
         {
           "name": "Prior Week High",
           "value": 93.5,
-          "distance": -9.650001525878906,
+          "distance": -9.510002136230469,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 80.2699966430664,
-          "distance": 3.5800018310546875,
+          "distance": 3.720001220703125,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 97.0,
-          "distance": -13.150001525878906,
+          "distance": -13.010002136230469,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 68.55999755859375,
-          "distance": 15.290000915527344,
+          "distance": 15.430000305175781,
           "swept_today": false
         }
       ],
@@ -543,43 +543,43 @@
       "label": "EUR/USD",
       "ok": true,
       "ticker_used": "EURUSD=X",
-      "spot": 1.1410315036773682,
+      "spot": 1.1407711505889893,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 1.1399909257888794,
-          "distance": 0.0010405778884887695,
+          "distance": 0.0007802248001098633,
           "swept_today": true
         },
         {
           "name": "Prior Day Low",
           "value": 1.1367511749267578,
-          "distance": 0.0042803287506103516,
+          "distance": 0.004019975662231445,
           "swept_today": false
         },
         {
           "name": "Prior Week High",
           "value": 1.1449507474899292,
-          "distance": -0.003919243812561035,
+          "distance": -0.004179596900939941,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 1.1365057229995728,
-          "distance": 0.00452578067779541,
+          "distance": 0.004265427589416504,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 1.1667250394821167,
-          "distance": -0.025693535804748535,
+          "distance": -0.02595388889312744,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 1.132541298866272,
-          "distance": 0.008490204811096191,
+          "distance": 0.008229851722717285,
           "swept_today": false
         }
       ],
@@ -590,43 +590,43 @@
       "label": "GBP/USD",
       "ok": true,
       "ticker_used": "GBPUSD=X",
-      "spot": 1.3343652486801147,
+      "spot": 1.3345789909362793,
       "bias": "bullish",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 1.334917426109314,
-          "distance": -0.0005521774291992188,
+          "distance": -0.00033843517303466797,
           "swept_today": true
         },
         {
           "name": "Prior Day Low",
           "value": 1.3307428359985352,
-          "distance": 0.00362241268157959,
+          "distance": 0.0038361549377441406,
           "swept_today": false
         },
         {
           "name": "Prior Week High",
           "value": 1.3480722904205322,
-          "distance": -0.01370704174041748,
+          "distance": -0.01349329948425293,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 1.3300524950027466,
-          "distance": 0.004312753677368164,
+          "distance": 0.004526495933532715,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 1.3482722043991089,
-          "distance": -0.01390695571899414,
+          "distance": -0.01369321346282959,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 1.3143022060394287,
-          "distance": 0.020063042640686035,
+          "distance": 0.020276784896850586,
           "swept_today": false
         }
       ],
@@ -637,43 +637,43 @@
       "label": "USD/JPY",
       "ok": true,
       "ticker_used": "USDJPY=X",
-      "spot": 163.4720001220703,
+      "spot": 163.39599609375,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 163.93099975585938,
-          "distance": -0.4589996337890625,
+          "distance": -0.535003662109375,
           "swept_today": false
         },
         {
           "name": "Prior Day Low",
           "value": 163.64500427246094,
-          "distance": -0.173004150390625,
+          "distance": -0.2490081787109375,
           "swept_today": true
         },
         {
           "name": "Prior Week High",
           "value": 163.97900390625,
-          "distance": -0.5070037841796875,
+          "distance": -0.5830078125,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 162.27099609375,
-          "distance": 1.2010040283203125,
+          "distance": 1.125,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 162.6510009765625,
-          "distance": 0.8209991455078125,
+          "distance": 0.7449951171875,
           "swept_today": true
         },
         {
           "name": "Prior Month Low",
           "value": 159.3679962158203,
-          "distance": 4.10400390625,
+          "distance": 4.0279998779296875,
           "swept_today": false
         }
       ],
@@ -684,47 +684,47 @@
       "label": "Bitcoin",
       "ok": true,
       "ticker_used": "BTC-USD",
-      "spot": 65364.26171875,
-      "bias": "bullish",
+      "spot": 65255.94140625,
+      "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 65503.76953125,
-          "distance": -139.5078125,
+          "distance": -247.828125,
           "swept_today": true
         },
         {
           "name": "Prior Day Low",
           "value": 64233.453125,
-          "distance": 1130.80859375,
+          "distance": 1022.48828125,
           "swept_today": false
         },
         {
           "name": "Prior Week High",
           "value": 66910.0625,
-          "distance": -1545.80078125,
+          "distance": -1654.12109375,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 63686.03515625,
-          "distance": 1678.2265625,
+          "distance": 1569.90625,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 73969.5703125,
-          "distance": -8605.30859375,
+          "distance": -8713.62890625,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 58075.921875,
-          "distance": 7288.33984375,
+          "distance": 7180.01953125,
           "swept_today": false
         }
       ],
-      "headline": "Fed Rate Decision Pits 104 Economists Against a 36% Hike Bet"
+      "headline": "Indonesia bank chief quits, adding uncertainty to struggling economy"
     },
     {
       "key": "US10Y_YIELD",
@@ -732,19 +732,19 @@
       "ok": true,
       "ticker_used": "^TNX",
       "spot": 4.678999900817871,
-      "bias": "neutral",
+      "bias": "bullish",
       "levels": [
         {
           "name": "Prior Day High",
-          "value": 4.714000225067139,
-          "distance": -0.03500032424926758,
-          "swept_today": false
+          "value": 4.660999774932861,
+          "distance": 0.018000125885009766,
+          "swept_today": true
         },
         {
           "name": "Prior Day Low",
-          "value": 4.692999839782715,
-          "distance": -0.01399993896484375,
-          "swept_today": true
+          "value": 4.631999969482422,
+          "distance": 0.04699993133544922,
+          "swept_today": false
         },
         {
           "name": "Prior Week High",
@@ -778,43 +778,43 @@
       "label": "US 10-Year T-Note Futures",
       "ok": true,
       "ticker_used": "ZN=F",
-      "spot": 108.59375,
+      "spot": 108.640625,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 108.484375,
-          "distance": 0.109375,
+          "distance": 0.15625,
           "swept_today": true
         },
         {
           "name": "Prior Day Low",
           "value": 108.03125,
-          "distance": 0.5625,
+          "distance": 0.609375,
           "swept_today": false
         },
         {
           "name": "Prior Week High",
           "value": 109.265625,
-          "distance": -0.671875,
+          "distance": -0.625,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 108.015625,
-          "distance": 0.578125,
+          "distance": 0.625,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 110.328125,
-          "distance": -1.734375,
+          "distance": -1.6875,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 109.0625,
-          "distance": -0.46875,
+          "distance": -0.421875,
           "swept_today": true
         }
       ],
@@ -825,43 +825,43 @@
       "label": "US 2-Year Treasury Yield",
       "ok": true,
       "ticker_used": "ZT=F",
-      "spot": 102.80859375,
+      "spot": 102.81640625,
       "bias": "neutral",
       "levels": [
         {
           "name": "Prior Day High",
           "value": 102.78125,
-          "distance": 0.02734375,
+          "distance": 0.03515625,
           "swept_today": true
         },
         {
           "name": "Prior Day Low",
           "value": 102.66796875,
-          "distance": 0.140625,
+          "distance": 0.1484375,
           "swept_today": false
         },
         {
           "name": "Prior Week High",
           "value": 103.03125,
-          "distance": -0.22265625,
+          "distance": -0.21484375,
           "swept_today": false
         },
         {
           "name": "Prior Week Low",
           "value": 102.65625,
-          "distance": 0.15234375,
+          "distance": 0.16015625,
           "swept_today": false
         },
         {
           "name": "Prior Month High",
           "value": 103.46875,
-          "distance": -0.66015625,
+          "distance": -0.65234375,
           "swept_today": false
         },
         {
           "name": "Prior Month Low",
           "value": 102.96875,
-          "distance": -0.16015625,
+          "distance": -0.15234375,
           "swept_today": true
         }
       ],
@@ -873,19 +873,19 @@
       "key": "GBPUSD",
       "label": "GBP/USD",
       "bias": "bullish",
-      "spot": 1.3343652486801147,
+      "spot": 1.3345789909362793,
       "target_level": "Prior Day Low",
       "target_value": 1.3307428359985352,
-      "distance": 0.00362241268157959
+      "distance": 0.0038361549377441406
     },
     {
-      "key": "BTC",
-      "label": "Bitcoin",
+      "key": "US10Y_YIELD",
+      "label": "US 10-Year Treasury Yield",
       "bias": "bullish",
-      "spot": 65364.26171875,
+      "spot": 4.678999900817871,
       "target_level": "Prior Day Low",
-      "target_value": 64233.453125,
-      "distance": 1130.80859375
+      "target_value": 4.631999969482422,
+      "distance": 0.04699993133544922
     }
   ]
 }
