@@ -18,9 +18,13 @@
       "Prior Day High"
     ],
     "GBPUSD": [
-      "Prior Day High"
+      "Prior Day High",
+      "Prior Day Low",
+      "Prior Week Low"
     ],
-    "USDJPY": [],
+    "USDJPY": [
+      "Prior Day Low"
+    ],
     "BTC": [],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [],
