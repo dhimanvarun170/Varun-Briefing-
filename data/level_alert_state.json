@@ -22,7 +22,8 @@
       "Prior Week Low"
     ],
     "GBPUSD": [
-      "Prior Day Low"
+      "Prior Day Low",
+      "Prior Week Low"
     ],
     "USDJPY": [
       "Prior Day High",
@@ -35,7 +36,8 @@
     ],
     "US2Y_YIELD": [
       "Prior Day High",
-      "Prior Day Low"
+      "Prior Day Low",
+      "Prior Month Low"
     ]
   }
 }
