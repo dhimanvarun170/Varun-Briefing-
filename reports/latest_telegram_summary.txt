@@ -1,14 +1,14 @@
-Report: NY Pre-Session - 2026-07-27
+Report: NY Pre-Session - 2026-07-28
 
-NQ: BEARISH (28,101.50)
-DXY: BULLISH (101.50)
-Gold: BULLISH (4,079.20)
+NQ: BEARISH (27,995.75)
+DXY: NEUTRAL (101.36)
+Gold: BEARISH (4,032.20)
 10Y yield: FALLING
 
-FINAL STANCE: NEUTRAL / WAIT - mixed signals, let price confirm
+FINAL STANCE: BEARISH (risk-off lean)
 
-Full report: https://github.com/dhimanvarun170/Varun-Briefing-/blob/main/reports/2026-07-27-ny.md
+Full report: https://github.com/dhimanvarun170/Varun-Briefing-/blob/main/reports/2026-07-28-ny.md
 
 Top setups:
-- EUR/USD: BEARISH -> Prior Day Low (+0.00 away)
-- GBP/USD: BEARISH -> Prior Month Low (+0.01 away)
+- EUR/USD: BEARISH -> Prior Day High (-0.00 away)
+- GBP/USD: BEARISH -> Prior Day High (-0.01 away)
