@@ -27,17 +27,20 @@ def cmd_check_levels(cfg: dict):
     events = level_watch.check_all_levels(cfg)
 
     now_minute = dt.datetime.now(dt.timezone.utc).minute
-    send_table = now_minute % 30 < 5
+    is_heartbeat = now_minute % 30 < 5
+
+    watchlist = None
+    if events or is_heartbeat:
+        watchlist = level_watch.analyze_full_watchlist(cfg)
 
     parts = []
     if events:
         parts.append(level_watch.format_alert_message(events))
-    if send_table:
-        watchlist = level_watch.analyze_full_watchlist(cfg)
+    if watchlist is not None:
         parts.append(level_watch.format_proximity_summary(watchlist))
 
     if not parts:
-        print("No new touches this check, not a 30-min table slot - nothing to send.")
+        print("No new touches this check, not a 30-min heartbeat - nothing to send.")
         return
 
     msg = "\n\n".join(parts)
