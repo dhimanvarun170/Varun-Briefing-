@@ -1,0 +1,50 @@
+name: NY Pre-Session Report
+
+on:
+  schedule:
+    - cron: "33 12 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  generate-ny-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate NY report
+        run: python main.py generate ny
+
+      - name: Send Telegram notification
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then
+            echo "Telegram secrets not set - skipping notification."
+            exit 0
+          fi
+          SUMMARY=$(cat reports/latest_telegram_summary.txt)
+          curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=${SUMMARY}"
+
+      - name: Commit and push report
+        run: |
+          git config user.name "market-briefing-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add reports/
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto: NY pre-session report $(date -u +%Y-%m-%d)"
+          git pull --no-rebase -X ours --no-edit origin main
+          git push
