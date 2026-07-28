@@ -5,6 +5,10 @@ on:
   workflow_dispatch: {}
 permissions:
   contents: write
+
+concurrency:
+  group: level-alert-watcher
+  cancel-in-progress: false
 jobs:
   check-levels:
     runs-on: ubuntu-latest
