@@ -61,8 +61,31 @@ def _save_state(state: dict):
 def _reset_state_if_new_day(state: dict) -> dict:
     today = dt.datetime.now(dt.timezone.utc).date().isoformat()
     if state.get("date") != today:
-        return {"date": today, "triggered": {}}
+        last_hb = state.get("last_heartbeat_utc")
+        new_state = {"date": today, "triggered": {}}
+        if last_hb:
+            new_state["last_heartbeat_utc"] = last_hb
+        return new_state
     return state
+
+
+def should_send_heartbeat(min_interval_minutes: int = 25) -> bool:
+    state = _load_state()
+    last = state.get("last_heartbeat_utc")
+    now = dt.datetime.now(dt.timezone.utc)
+    if not last:
+        return True
+    try:
+        last_dt = dt.datetime.fromisoformat(last)
+    except Exception:
+        return True
+    return (now - last_dt).total_seconds() >= min_interval_minutes * 60
+
+
+def mark_heartbeat_sent():
+    state = _load_state()
+    state["last_heartbeat_utc"] = dt.datetime.now(dt.timezone.utc).isoformat()
+    _save_state(state)
 
 
 def _compute_levels(daily_df) -> dict:
