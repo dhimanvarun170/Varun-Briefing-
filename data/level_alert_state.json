@@ -3,8 +3,12 @@
   "triggered": {
     "NQ": [],
     "DXY": [],
-    "GOLD_FUT": [],
-    "GOLD_SPOT": [],
+    "GOLD_FUT": [
+      "Prior Week High"
+    ],
+    "GOLD_SPOT": [
+      "Prior Week High"
+    ],
     "SILVER_FUT": [],
     "SILVER_SPOT": [],
     "OIL_FUT": [],
@@ -32,5 +36,5 @@
       "Prior Month Low"
     ]
   },
-  "last_heartbeat_utc": "2026-07-29T20:17:05.685887+00:00"
+  "last_heartbeat_utc": "2026-07-29T23:47:41.324558+00:00"
 }
