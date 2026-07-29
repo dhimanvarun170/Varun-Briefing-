@@ -25,9 +25,7 @@ log = get_logger("main")
 def cmd_check_levels(cfg: dict):
     log.info("Checking D/W/M levels across the full watchlist ...")
     events = level_watch.check_all_levels(cfg)
-
-    now_minute = dt.datetime.now(dt.timezone.utc).minute
-    is_heartbeat = now_minute % 30 < 5
+    is_heartbeat = level_watch.should_send_heartbeat()
 
     watchlist = None
     if events or is_heartbeat:
@@ -38,9 +36,11 @@ def cmd_check_levels(cfg: dict):
         parts.append(level_watch.format_alert_message(events))
     if watchlist is not None:
         parts.append(level_watch.format_proximity_summary(watchlist))
+        if is_heartbeat:
+            level_watch.mark_heartbeat_sent()
 
     if not parts:
-        print("No new touches this check, not a 30-min heartbeat - nothing to send.")
+        print("No new touches this check, not due for a heartbeat - nothing to send.")
         return
 
     msg = "\n\n".join(parts)
