@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-31",
+  "date": "2026-08-01",
   "triggered": {
     "NQ": [],
     "DXY": [],
@@ -10,21 +10,15 @@
     "OIL_FUT": [],
     "EURUSD": [],
     "GBPUSD": [
-      "Prior Week High",
       "Prior Month High"
     ],
     "USDJPY": [],
-    "BTC": [
-      "Prior Week Low"
-    ],
+    "BTC": [],
     "US10Y_YIELD": [],
-    "US10Y_NOTE_FUT": [
-      "Prior Day High",
-      "Prior Week Low"
-    ],
+    "US10Y_NOTE_FUT": [],
     "US2Y_YIELD": [
       "Prior Day Low"
     ]
   },
-  "last_heartbeat_utc": "2026-07-31T22:40:22.410612+00:00"
+  "last_heartbeat_utc": "2026-08-01T07:39:43.304665+00:00"
 }
