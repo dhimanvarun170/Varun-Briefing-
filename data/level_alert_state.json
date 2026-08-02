@@ -10,7 +10,9 @@
     "SILVER_FUT": [],
     "SILVER_SPOT": [],
     "OIL_FUT": [],
-    "EURUSD": [],
+    "EURUSD": [
+      "Prior Day High"
+    ],
     "GBPUSD": [],
     "USDJPY": [],
     "BTC": [
@@ -24,5 +26,5 @@
       "Prior Day Low"
     ]
   },
-  "last_heartbeat_utc": "2026-08-02T15:47:23.540756+00:00"
+  "last_heartbeat_utc": "2026-08-02T20:01:50.101623+00:00"
 }
