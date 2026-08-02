@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-01",
+  "date": "2026-08-02",
   "triggered": {
     "NQ": [
       "Prior Day High"
@@ -11,9 +11,7 @@
     "SILVER_SPOT": [],
     "OIL_FUT": [],
     "EURUSD": [],
-    "GBPUSD": [
-      "Prior Month High"
-    ],
+    "GBPUSD": [],
     "USDJPY": [],
     "BTC": [],
     "US10Y_YIELD": [],
@@ -24,5 +22,5 @@
       "Prior Day Low"
     ]
   },
-  "last_heartbeat_utc": "2026-08-01T23:43:23.202753+00:00"
+  "last_heartbeat_utc": "2026-08-02T07:53:44.894620+00:00"
 }
