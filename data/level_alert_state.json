@@ -4,7 +4,11 @@
     "NQ": [
       "Prior Day High"
     ],
-    "DXY": [],
+    "DXY": [
+      "Prior Day Low",
+      "Prior Week Low",
+      "Prior Month Low"
+    ],
     "GOLD_FUT": [],
     "GOLD_SPOT": [],
     "SILVER_FUT": [],
@@ -23,8 +27,9 @@
       "Prior Week Low"
     ],
     "US2Y_YIELD": [
-      "Prior Day Low"
+      "Prior Day Low",
+      "Prior Day High"
     ]
   },
-  "last_heartbeat_utc": "2026-08-02T20:01:50.101623+00:00"
+  "last_heartbeat_utc": "2026-08-02T23:43:35.560742+00:00"
 }
