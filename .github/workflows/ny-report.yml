@@ -1,8 +1,6 @@
 name: NY Pre-Session Report
 
 on:
-  schedule:
-    - cron: "33 12 * * 1-5"
   workflow_dispatch: {}
 
 permissions:
