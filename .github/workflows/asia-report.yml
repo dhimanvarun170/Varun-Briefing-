@@ -1,8 +1,6 @@
 name: Asia Pre-Session Report
 
 on:
-  schedule:
-    - cron: "3 23 * * 0-4"
   workflow_dispatch: {}
 
 permissions:
