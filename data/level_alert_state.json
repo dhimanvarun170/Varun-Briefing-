@@ -1,33 +1,32 @@
 {
-  "date": "2026-08-04",
+  "date": "2026-08-05",
   "triggered": {
-    "NQ": [],
-    "DXY": [],
+    "NQ": [
+      "Prior Day High"
+    ],
+    "DXY": [
+      "Prior Day Low"
+    ],
     "GOLD_FUT": [],
     "GOLD_SPOT": [],
-    "SILVER_FUT": [
-      "Prior Day High"
-    ],
-    "SILVER_SPOT": [
-      "Prior Day High"
-    ],
+    "SILVER_FUT": [],
+    "SILVER_SPOT": [],
     "OIL_FUT": [],
     "EURUSD": [
       "Prior Week High",
       "Prior Month High"
     ],
-    "GBPUSD": [],
-    "USDJPY": [],
-    "BTC": [],
-    "US10Y_YIELD": [
+    "GBPUSD": [
       "Prior Day High"
     ],
-    "US10Y_NOTE_FUT": [
-      "Prior Week High"
-    ],
+    "USDJPY": [],
+    "BTC": [],
+    "US10Y_YIELD": [],
+    "US10Y_NOTE_FUT": [],
     "US2Y_YIELD": [
+      "Prior Day High",
       "Prior Week High"
     ]
   },
-  "last_heartbeat_utc": "2026-08-04T20:58:12.821222+00:00"
+  "last_heartbeat_utc": "2026-08-05T06:14:46.240958+00:00"
 }
