@@ -15,7 +15,9 @@
     ],
     "GBPUSD": [],
     "USDJPY": [],
-    "BTC": [],
+    "BTC": [
+      "Prior Week High"
+    ],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [],
     "US2Y_YIELD": [
@@ -23,5 +25,5 @@
       "Prior Week High"
     ]
   },
-  "last_heartbeat_utc": "2026-08-08T00:02:46.627822+00:00"
+  "last_heartbeat_utc": "2026-08-08T04:32:32.150958+00:00"
 }
