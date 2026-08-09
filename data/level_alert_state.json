@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-08",
+  "date": "2026-08-09",
   "triggered": {
     "NQ": [],
     "DXY": [
@@ -15,15 +15,12 @@
     ],
     "GBPUSD": [],
     "USDJPY": [],
-    "BTC": [
-      "Prior Week High"
-    ],
+    "BTC": [],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [],
     "US2Y_YIELD": [
-      "Prior Day High",
       "Prior Week High"
     ]
   },
-  "last_heartbeat_utc": "2026-08-08T23:48:50.430974+00:00"
+  "last_heartbeat_utc": "2026-08-09T04:47:25.117325+00:00"
 }
