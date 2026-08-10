@@ -2,7 +2,9 @@
   "date": "2026-08-10",
   "triggered": {
     "NQ": [],
-    "DXY": [],
+    "DXY": [
+      "Prior Month Low"
+    ],
     "GOLD_FUT": [],
     "GOLD_SPOT": [],
     "SILVER_FUT": [],
@@ -16,5 +18,5 @@
     "US10Y_NOTE_FUT": [],
     "US2Y_YIELD": []
   },
-  "last_heartbeat_utc": "2026-08-10T00:05:23.805919+00:00"
+  "last_heartbeat_utc": "2026-08-10T05:11:53.893136+00:00"
 }
