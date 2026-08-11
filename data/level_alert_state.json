@@ -32,8 +32,9 @@
     ],
     "US2Y_YIELD": [
       "Prior Day Low",
-      "Prior Week Low"
+      "Prior Week Low",
+      "Prior Day High"
     ]
   },
-  "last_heartbeat_utc": "2026-08-11T15:18:27.650226+00:00"
+  "last_heartbeat_utc": "2026-08-11T18:37:09.736742+00:00"
 }
