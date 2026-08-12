@@ -14,7 +14,8 @@
     "SILVER_SPOT": [],
     "OIL_FUT": [],
     "EURUSD": [
-      "Prior Month High"
+      "Prior Month High",
+      "Prior Day Low"
     ],
     "GBPUSD": [
       "Prior Week High",
@@ -38,5 +39,5 @@
       "Prior Day High"
     ]
   },
-  "last_heartbeat_utc": "2026-08-12T21:25:57.385174+00:00"
+  "last_heartbeat_utc": "2026-08-12T23:25:50.746395+00:00"
 }
