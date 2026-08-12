@@ -1,7 +1,9 @@
 {
   "date": "2026-08-12",
   "triggered": {
-    "NQ": [],
+    "NQ": [
+      "Prior Day High"
+    ],
     "DXY": [
       "Prior Day High",
       "Prior Month Low"
@@ -16,7 +18,8 @@
     ],
     "GBPUSD": [
       "Prior Week High",
-      "Prior Day High"
+      "Prior Day High",
+      "Prior Day Low"
     ],
     "USDJPY": [
       "Prior Day High",
@@ -35,5 +38,5 @@
       "Prior Day High"
     ]
   },
-  "last_heartbeat_utc": "2026-08-12T15:32:18.131700+00:00"
+  "last_heartbeat_utc": "2026-08-12T18:41:41.399514+00:00"
 }
