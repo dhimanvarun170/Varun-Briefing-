@@ -2,7 +2,8 @@
   "date": "2026-08-14",
   "triggered": {
     "NQ": [
-      "Prior Day High"
+      "Prior Day High",
+      "Prior Week High"
     ],
     "DXY": [
       "Prior Month Low"
@@ -15,7 +16,9 @@
     "SILVER_SPOT": [
       "Prior Day High"
     ],
-    "OIL_FUT": [],
+    "OIL_FUT": [
+      "Prior Week High"
+    ],
     "EURUSD": [
       "Prior Day High"
     ],
@@ -34,5 +37,5 @@
       "Prior Month High"
     ]
   },
-  "last_heartbeat_utc": "2026-08-14T15:11:05.563017+00:00"
+  "last_heartbeat_utc": "2026-08-14T18:10:03.610230+00:00"
 }
