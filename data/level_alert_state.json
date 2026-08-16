@@ -19,8 +19,9 @@
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [],
     "US2Y_YIELD": [
-      "Prior Week High"
+      "Prior Week High",
+      "Prior Day Low"
     ]
   },
-  "last_heartbeat_utc": "2026-08-16T21:40:57.539970+00:00"
+  "last_heartbeat_utc": "2026-08-16T22:54:43.498324+00:00"
 }
