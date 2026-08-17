@@ -40,7 +40,9 @@
       "Prior Day Low",
       "Prior Day High"
     ],
-    "US10Y_YIELD": [],
+    "US10Y_YIELD": [
+      "Prior Day High"
+    ],
     "US10Y_NOTE_FUT": [
       "Prior Day Low"
     ],
@@ -48,5 +50,5 @@
       "Prior Day Low"
     ]
   },
-  "last_heartbeat_utc": "2026-08-17T13:46:57.867048+00:00"
+  "last_heartbeat_utc": "2026-08-17T14:27:11.644085+00:00"
 }
