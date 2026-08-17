@@ -3,8 +3,12 @@
   "triggered": {
     "NQ": [],
     "DXY": [],
-    "GOLD_FUT": [],
-    "GOLD_SPOT": [],
+    "GOLD_FUT": [
+      "Prior Week High"
+    ],
+    "GOLD_SPOT": [
+      "Prior Week High"
+    ],
     "SILVER_FUT": [
       "Prior Day High",
       "Prior Day Low"
@@ -14,7 +18,10 @@
       "Prior Day Low"
     ],
     "OIL_FUT": [],
-    "EURUSD": [],
+    "EURUSD": [
+      "Prior Day High",
+      "Prior Week High"
+    ],
     "GBPUSD": [
       "Prior Month High"
     ],
@@ -28,5 +35,5 @@
       "Prior Day Low"
     ]
   },
-  "last_heartbeat_utc": "2026-08-16T23:40:26.491347+00:00"
+  "last_heartbeat_utc": "2026-08-17T03:29:37.293339+00:00"
 }
