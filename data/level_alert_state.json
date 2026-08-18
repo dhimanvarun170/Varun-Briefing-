@@ -5,8 +5,12 @@
     "DXY": [
       "Prior Month Low"
     ],
-    "GOLD_FUT": [],
-    "GOLD_SPOT": [],
+    "GOLD_FUT": [
+      "Prior Week High"
+    ],
+    "GOLD_SPOT": [
+      "Prior Week High"
+    ],
     "SILVER_FUT": [
       "Prior Day Low"
     ],
@@ -38,5 +42,5 @@
       "Prior Day Low"
     ]
   },
-  "last_heartbeat_utc": "2026-08-18T08:56:25.458349+00:00"
+  "last_heartbeat_utc": "2026-08-18T09:35:49.745691+00:00"
 }
