@@ -36,7 +36,9 @@
       "Prior Day High",
       "Prior Week High"
     ],
-    "BTC": [],
+    "BTC": [
+      "Prior Day High"
+    ],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [
       "Prior Day Low"
@@ -46,5 +48,5 @@
       "Prior Day High"
     ]
   },
-  "last_heartbeat_utc": "2026-08-18T19:29:39.863700+00:00"
+  "last_heartbeat_utc": "2026-08-18T20:22:51.950048+00:00"
 }
