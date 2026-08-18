@@ -5,8 +5,12 @@
     "DXY": [],
     "GOLD_FUT": [],
     "GOLD_SPOT": [],
-    "SILVER_FUT": [],
-    "SILVER_SPOT": [],
+    "SILVER_FUT": [
+      "Prior Day Low"
+    ],
+    "SILVER_SPOT": [
+      "Prior Day Low"
+    ],
     "OIL_FUT": [],
     "EURUSD": [
       "Prior Week High",
@@ -30,5 +34,5 @@
       "Prior Day Low"
     ]
   },
-  "last_heartbeat_utc": "2026-08-18T04:52:27.729284+00:00"
+  "last_heartbeat_utc": "2026-08-18T05:28:34.521457+00:00"
 }
