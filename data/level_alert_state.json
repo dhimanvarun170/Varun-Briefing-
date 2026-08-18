@@ -13,10 +13,12 @@
       "Prior Week High"
     ],
     "SILVER_FUT": [
-      "Prior Day Low"
+      "Prior Day Low",
+      "Prior Week Low"
     ],
     "SILVER_SPOT": [
-      "Prior Day Low"
+      "Prior Day Low",
+      "Prior Week Low"
     ],
     "OIL_FUT": [
       "Prior Day High"
@@ -44,5 +46,5 @@
       "Prior Day High"
     ]
   },
-  "last_heartbeat_utc": "2026-08-18T17:43:03.329267+00:00"
+  "last_heartbeat_utc": "2026-08-18T18:56:52.616355+00:00"
 }
