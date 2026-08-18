@@ -14,7 +14,8 @@
     ],
     "GBPUSD": [
       "Prior Day Low",
-      "Prior Month High"
+      "Prior Month High",
+      "Prior Week High"
     ],
     "USDJPY": [
       "Prior Day High",
@@ -22,10 +23,12 @@
     ],
     "BTC": [],
     "US10Y_YIELD": [],
-    "US10Y_NOTE_FUT": [],
+    "US10Y_NOTE_FUT": [
+      "Prior Day Low"
+    ],
     "US2Y_YIELD": [
       "Prior Day Low"
     ]
   },
-  "last_heartbeat_utc": "2026-08-18T04:07:51.429810+00:00"
+  "last_heartbeat_utc": "2026-08-18T04:52:27.729284+00:00"
 }
