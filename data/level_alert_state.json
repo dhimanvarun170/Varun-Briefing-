@@ -26,7 +26,8 @@
       "Prior Week High"
     ],
     "GBPUSD": [
-      "Prior Month High"
+      "Prior Month High",
+      "Prior Week High"
     ],
     "USDJPY": [
       "Prior Week High",
@@ -40,5 +41,5 @@
       "Prior Day Low"
     ]
   },
-  "last_heartbeat_utc": "2026-08-19T05:29:44.064025+00:00"
+  "last_heartbeat_utc": "2026-08-19T05:58:55.616188+00:00"
 }
