@@ -30,7 +30,9 @@
     "GBPUSD": [
       "Prior Day High"
     ],
-    "USDJPY": [],
+    "USDJPY": [
+      "Prior Day High"
+    ],
     "BTC": [],
     "US10Y_YIELD": [
       "Prior Week High"
