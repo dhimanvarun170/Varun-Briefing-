@@ -10,8 +10,12 @@
     ],
     "GOLD_FUT": [],
     "GOLD_SPOT": [],
-    "SILVER_FUT": [],
-    "SILVER_SPOT": [],
+    "SILVER_FUT": [
+      "Prior Day High"
+    ],
+    "SILVER_SPOT": [
+      "Prior Day High"
+    ],
     "OIL_FUT": [
       "Prior Week High",
       "Prior Day Low"
@@ -27,8 +31,9 @@
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [],
     "US2Y_YIELD": [
-      "Prior Day High"
+      "Prior Day High",
+      "Prior Day Low"
     ]
   },
-  "last_heartbeat_utc": "2026-08-20T10:39:37.650231+00:00"
+  "last_heartbeat_utc": "2026-08-20T11:43:03.114466+00:00"
 }
