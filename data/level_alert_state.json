@@ -14,7 +14,10 @@
     "BTC": [],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [],
-    "US2Y_YIELD": []
+    "US2Y_YIELD": [
+      "Prior Day Low",
+      "Prior Week Low"
+    ]
   },
-  "last_heartbeat_utc": "2026-08-24T01:15:19.273610+00:00"
+  "last_heartbeat_utc": "2026-08-24T02:39:09.079304+00:00"
 }
