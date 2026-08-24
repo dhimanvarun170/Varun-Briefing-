@@ -2,7 +2,8 @@
   "date": "2026-08-24",
   "triggered": {
     "NQ": [
-      "Prior Day Low"
+      "Prior Day Low",
+      "Prior Week Low"
     ],
     "DXY": [
       "Prior Day High"
@@ -27,5 +28,5 @@
       "Prior Week Low"
     ]
   },
-  "last_heartbeat_utc": "2026-08-24T10:04:03.312980+00:00"
+  "last_heartbeat_utc": "2026-08-24T10:53:35.099072+00:00"
 }
