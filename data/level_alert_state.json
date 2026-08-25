@@ -10,8 +10,12 @@
     "OIL_FUT": [
       "Prior Day Low"
     ],
-    "EURUSD": [],
-    "GBPUSD": [],
+    "EURUSD": [
+      "Prior Day Low"
+    ],
+    "GBPUSD": [
+      "Prior Day Low"
+    ],
     "USDJPY": [
       "Prior Day High"
     ],
@@ -23,5 +27,5 @@
       "Prior Week Low"
     ]
   },
-  "last_heartbeat_utc": "2026-08-25T02:32:10.922608+00:00"
+  "last_heartbeat_utc": "2026-08-25T03:31:39.932488+00:00"
 }
