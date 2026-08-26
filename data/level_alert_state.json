@@ -1,7 +1,9 @@
 {
   "date": "2026-08-26",
   "triggered": {
-    "NQ": [],
+    "NQ": [
+      "Prior Week Low"
+    ],
     "DXY": [],
     "GOLD_FUT": [],
     "GOLD_SPOT": [],
@@ -28,5 +30,5 @@
       "Prior Day High"
     ]
   },
-  "last_heartbeat_utc": "2026-08-26T07:02:02.691381+00:00"
+  "last_heartbeat_utc": "2026-08-26T07:59:34.147395+00:00"
 }
