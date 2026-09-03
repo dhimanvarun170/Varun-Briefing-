@@ -5,8 +5,12 @@
     "DXY": [],
     "GOLD_FUT": [],
     "GOLD_SPOT": [],
-    "SILVER_FUT": [],
-    "SILVER_SPOT": [],
+    "SILVER_FUT": [
+      "Prior Week Low"
+    ],
+    "SILVER_SPOT": [
+      "Prior Week Low"
+    ],
     "OIL_FUT": [],
     "EURUSD": [
       "Prior Week Low"
@@ -18,5 +22,5 @@
     "US10Y_NOTE_FUT": [],
     "US2Y_YIELD": []
   },
-  "last_heartbeat_utc": "2026-09-03T06:11:58.098976+00:00"
+  "last_heartbeat_utc": "2026-09-03T11:17:13.733320+00:00"
 }
