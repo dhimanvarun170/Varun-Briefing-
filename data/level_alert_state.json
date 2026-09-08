@@ -3,7 +3,8 @@
   "triggered": {
     "NQ": [
       "Prior Day High",
-      "Prior Week High"
+      "Prior Week High",
+      "Prior Day Low"
     ],
     "DXY": [
       "Prior Week Low",
@@ -23,7 +24,9 @@
     "GBPUSD": [
       "Prior Day High"
     ],
-    "USDJPY": [],
+    "USDJPY": [
+      "Prior Day Low"
+    ],
     "BTC": [],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [
@@ -31,5 +34,5 @@
     ],
     "US2Y_YIELD": []
   },
-  "last_heartbeat_utc": "2026-09-08T09:57:30.948783+00:00"
+  "last_heartbeat_utc": "2026-09-08T14:16:56.655428+00:00"
 }
