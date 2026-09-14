@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-13",
+  "date": "2026-09-14",
   "triggered": {
     "NQ": [],
     "DXY": [],
@@ -9,14 +9,12 @@
     "SILVER_SPOT": [],
     "OIL_FUT": [],
     "EURUSD": [],
-    "GBPUSD": [
-      "Prior Day High"
-    ],
+    "GBPUSD": [],
     "USDJPY": [],
     "BTC": [],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [],
     "US2Y_YIELD": []
   },
-  "last_heartbeat_utc": "2026-09-13T23:19:50.821839+00:00"
+  "last_heartbeat_utc": "2026-09-14T01:23:00.892796+00:00"
 }
