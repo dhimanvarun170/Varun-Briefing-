@@ -1,14 +1,10 @@
 {
-  "date": "2026-09-20",
+  "date": "2026-09-21",
   "triggered": {
     "NQ": [],
     "DXY": [],
-    "GOLD_FUT": [
-      "Prior Day High"
-    ],
-    "GOLD_SPOT": [
-      "Prior Day High"
-    ],
+    "GOLD_FUT": [],
+    "GOLD_SPOT": [],
     "SILVER_FUT": [],
     "SILVER_SPOT": [],
     "OIL_FUT": [],
@@ -20,5 +16,5 @@
     "US10Y_NOTE_FUT": [],
     "US2Y_YIELD": []
   },
-  "last_heartbeat_utc": "2026-09-20T22:43:11.825802+00:00"
+  "last_heartbeat_utc": "2026-09-21T00:32:03.107194+00:00"
 }
