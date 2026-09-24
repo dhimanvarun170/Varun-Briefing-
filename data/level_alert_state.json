@@ -11,12 +11,14 @@
     "EURUSD": [
       "Prior Day Low"
     ],
-    "GBPUSD": [],
+    "GBPUSD": [
+      "Prior Day Low"
+    ],
     "USDJPY": [],
     "BTC": [],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [],
     "US2Y_YIELD": []
   },
-  "last_heartbeat_utc": "2026-09-24T01:26:05.558990+00:00"
+  "last_heartbeat_utc": "2026-09-24T06:31:58.344268+00:00"
 }
