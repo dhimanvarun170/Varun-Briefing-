@@ -15,10 +15,12 @@
       "Prior Day Low"
     ],
     "USDJPY": [],
-    "BTC": [],
+    "BTC": [
+      "Prior Day Low"
+    ],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [],
     "US2Y_YIELD": []
   },
-  "last_heartbeat_utc": "2026-09-24T06:31:58.344268+00:00"
+  "last_heartbeat_utc": "2026-09-24T12:13:54.502097+00:00"
 }
