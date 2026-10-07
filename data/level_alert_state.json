@@ -3,7 +3,8 @@
   "triggered": {
     "NQ": [],
     "DXY": [
-      "Prior Day High"
+      "Prior Day High",
+      "Prior Week High"
     ],
     "GOLD_FUT": [
       "Prior Day Low"
@@ -36,5 +37,5 @@
       "Prior Day Low"
     ]
   },
-  "last_heartbeat_utc": "2026-10-07T19:20:36.376849+00:00"
+  "last_heartbeat_utc": "2026-10-07T23:41:07.543069+00:00"
 }
