@@ -9,14 +9,18 @@
     "GOLD_SPOT": [],
     "SILVER_FUT": [],
     "SILVER_SPOT": [],
-    "OIL_FUT": [],
+    "OIL_FUT": [
+      "Prior Day High"
+    ],
     "EURUSD": [
       "Prior Week Low"
     ],
     "GBPUSD": [
       "Prior Week Low"
     ],
-    "USDJPY": [],
+    "USDJPY": [
+      "Prior Day Low"
+    ],
     "BTC": [],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [
@@ -27,5 +31,5 @@
       "Prior Month Low"
     ]
   },
-  "last_heartbeat_utc": "2026-10-08T17:30:45.124198+00:00"
+  "last_heartbeat_utc": "2026-10-08T22:28:54.272708+00:00"
 }
