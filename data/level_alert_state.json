@@ -4,7 +4,9 @@
     "NQ": [
       "Prior Month High"
     ],
-    "DXY": [],
+    "DXY": [
+      "Prior Week High"
+    ],
     "GOLD_FUT": [
       "Prior Day High"
     ],
@@ -34,5 +36,5 @@
       "Prior Month Low"
     ]
   },
-  "last_heartbeat_utc": "2026-10-09T16:36:19.219351+00:00"
+  "last_heartbeat_utc": "2026-10-09T21:18:19.031033+00:00"
 }
