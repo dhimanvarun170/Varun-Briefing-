@@ -5,7 +5,9 @@
       "Prior Week Low"
     ],
     "DXY": [
-      "Prior Day Low"
+      "Prior Day Low",
+      "Prior Day High",
+      "Prior Week High"
     ],
     "GOLD_FUT": [],
     "GOLD_SPOT": [],
@@ -13,7 +15,8 @@
     "SILVER_SPOT": [],
     "OIL_FUT": [],
     "EURUSD": [
-      "Prior Day High"
+      "Prior Day High",
+      "Prior Day Low"
     ],
     "GBPUSD": [
       "Prior Week Low"
@@ -36,5 +39,5 @@
       "Prior Day Low"
     ]
   },
-  "last_heartbeat_utc": "2026-10-14T18:01:18.490175+00:00"
+  "last_heartbeat_utc": "2026-10-14T21:41:11.341843+00:00"
 }
