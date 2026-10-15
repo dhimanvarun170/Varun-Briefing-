@@ -2,13 +2,17 @@
   "date": "2026-10-15",
   "triggered": {
     "NQ": [],
-    "DXY": [],
+    "DXY": [
+      "Prior Day Low"
+    ],
     "GOLD_FUT": [],
     "GOLD_SPOT": [],
     "SILVER_FUT": [],
     "SILVER_SPOT": [],
     "OIL_FUT": [],
-    "EURUSD": [],
+    "EURUSD": [
+      "Prior Day High"
+    ],
     "GBPUSD": [],
     "USDJPY": [],
     "BTC": [],
@@ -19,5 +23,5 @@
       "Prior Week High"
     ]
   },
-  "last_heartbeat_utc": "2026-10-15T00:07:39.966740+00:00"
+  "last_heartbeat_utc": "2026-10-15T04:39:07.199452+00:00"
 }
