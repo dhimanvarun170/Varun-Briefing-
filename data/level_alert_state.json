@@ -2,7 +2,9 @@
   "date": "2026-10-16",
   "triggered": {
     "NQ": [],
-    "DXY": [],
+    "DXY": [
+      "Prior Day Low"
+    ],
     "GOLD_FUT": [
       "Prior Day High"
     ],
@@ -16,7 +18,9 @@
     "GBPUSD": [
       "Prior Week High"
     ],
-    "USDJPY": [],
+    "USDJPY": [
+      "Prior Day High"
+    ],
     "BTC": [],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [],
@@ -25,5 +29,5 @@
       "Prior Week High"
     ]
   },
-  "last_heartbeat_utc": "2026-10-16T13:26:16.753387+00:00"
+  "last_heartbeat_utc": "2026-10-16T17:37:39.306589+00:00"
 }
