@@ -6,8 +6,12 @@
       "Prior Day Low",
       "Prior Month High"
     ],
-    "GOLD_FUT": [],
-    "GOLD_SPOT": [],
+    "GOLD_FUT": [
+      "Prior Month Low"
+    ],
+    "GOLD_SPOT": [
+      "Prior Month Low"
+    ],
     "SILVER_FUT": [],
     "SILVER_SPOT": [],
     "OIL_FUT": [],
@@ -24,8 +28,9 @@
       "Prior Day Low"
     ],
     "US2Y_YIELD": [
-      "Prior Day Low"
+      "Prior Day Low",
+      "Prior Month Low"
     ]
   },
-  "last_heartbeat_utc": "2026-10-20T15:06:08.072724+00:00"
+  "last_heartbeat_utc": "2026-10-20T19:17:12.101397+00:00"
 }
