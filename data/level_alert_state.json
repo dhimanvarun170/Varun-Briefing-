@@ -17,7 +17,9 @@
       "Prior Week High"
     ],
     "USDJPY": [],
-    "BTC": [],
+    "BTC": [
+      "Prior Day High"
+    ],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [],
     "US2Y_YIELD": [
@@ -25,5 +27,5 @@
       "Prior Month Low"
     ]
   },
-  "last_heartbeat_utc": "2026-10-21T05:54:11.059201+00:00"
+  "last_heartbeat_utc": "2026-10-21T11:15:40.594237+00:00"
 }
