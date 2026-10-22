@@ -9,15 +9,18 @@
     "SILVER_SPOT": [],
     "OIL_FUT": [],
     "EURUSD": [],
-    "GBPUSD": [],
+    "GBPUSD": [
+      "Prior Day High"
+    ],
     "USDJPY": [],
     "BTC": [],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [],
     "US2Y_YIELD": [
       "Prior Day Low",
-      "Prior Month Low"
+      "Prior Month Low",
+      "Prior Day High"
     ]
   },
-  "last_heartbeat_utc": "2026-10-22T01:41:52.944143+00:00"
+  "last_heartbeat_utc": "2026-10-22T06:36:37.900558+00:00"
 }
