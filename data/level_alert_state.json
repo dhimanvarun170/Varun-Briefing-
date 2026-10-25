@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "triggered": {
     "NQ": [],
     "DXY": [],
@@ -9,19 +9,14 @@
     "SILVER_SPOT": [],
     "OIL_FUT": [],
     "EURUSD": [],
-    "GBPUSD": [
-      "Prior Week High"
-    ],
+    "GBPUSD": [],
     "USDJPY": [],
-    "BTC": [
-      "Prior Day Low",
-      "Prior Week Low"
-    ],
+    "BTC": [],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [],
     "US2Y_YIELD": [
       "Prior Week High"
     ]
   },
-  "last_heartbeat_utc": "2026-10-24T23:46:56.024674+00:00"
+  "last_heartbeat_utc": "2026-10-25T03:25:44.568725+00:00"
 }
