@@ -10,15 +10,19 @@
     "OIL_FUT": [],
     "EURUSD": [],
     "GBPUSD": [],
-    "USDJPY": [],
+    "USDJPY": [
+      "Prior Day Low"
+    ],
     "BTC": [],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [
-      "Prior Day High"
+      "Prior Day High",
+      "Prior Week High"
     ],
     "US2Y_YIELD": [
-      "Prior Day High"
+      "Prior Day High",
+      "Prior Week High"
     ]
   },
-  "last_heartbeat_utc": "2026-10-29T17:25:43.495806+00:00"
+  "last_heartbeat_utc": "2026-10-29T21:55:58.836540+00:00"
 }
