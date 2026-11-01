@@ -11,7 +11,9 @@
     "EURUSD": [],
     "GBPUSD": [],
     "USDJPY": [],
-    "BTC": [],
+    "BTC": [
+      "Prior Day High"
+    ],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [
       "Prior Day High"
@@ -20,5 +22,5 @@
       "Prior Day High"
     ]
   },
-  "last_heartbeat_utc": "2026-11-01T15:08:16.330584+00:00"
+  "last_heartbeat_utc": "2026-11-01T19:40:25.019699+00:00"
 }
