@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "triggered": {
     "NQ": [],
     "DXY": [],
@@ -14,7 +14,10 @@
     "BTC": [],
     "US10Y_YIELD": [],
     "US10Y_NOTE_FUT": [],
-    "US2Y_YIELD": []
+    "US2Y_YIELD": [
+      "Prior Day Low",
+      "Prior Month High"
+    ]
   },
-  "last_heartbeat_utc": "2026-11-08T22:44:02.030336+00:00"
+  "last_heartbeat_utc": "2026-11-09T02:01:40.710520+00:00"
 }
